@@ -1,0 +1,108 @@
+.section-heritage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/image/newsletter-background-image-scaled.jpg) center center
+    no-repeat;
+  background-size: cover;
+  color: $lightColor;
+  & > h1 {
+    font-size: 3rem;
+    padding: 30px;
+    font-family: serif;
+  }
+}
+
+.generations {
+  width: 100%;
+  & > .container > .inner-generations {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & > .about-generations {
+      text-align: center;
+      padding: 0px 60px;
+      & > .title {
+        color: $darkColor;
+      }
+      & > p {
+        color: $titleColor;
+        text-align: center;
+        line-height: 2rem;
+      }
+      & > h1 {
+        font-size: 3rem;
+      }
+    }
+
+    .images-generations {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+
+      & > .cols {
+        text-align: center;
+        & > .image-col {
+          width: 100%;
+          & > img {
+            width: 100%;
+          }
+        }
+        & > h1 {
+          color: $anotherBlack;
+          font-size: 2rem;
+        }
+        & > p {
+          color: $titleColor;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}
+// linear-gradient(180deg, var(--awb-color8) 0%),
+.family-business {
+  overflow: hidden;
+  width: 100%;
+  background: url(/image/butcher-block-background-scaled.jpeg) center center
+    no-repeat;
+  background-size: cover;
+  padding: 4rem;
+  position: relative;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+
+  & > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+    padding: 60px 0px;
+    & > .inner-family-business {
+      width: 100%;
+      & > h1 {
+        color: $lightColor;
+        font-size: 3.5rem;
+      }
+      & > p {
+        color: $lightColor;
+        line-height: 30px;
+        margin: 20px 0px;
+        margin-bottom: 50px;
+        font-size: 1.2rem;
+        font-weight: normal;
+      }
+      & > a {
+        @extend %all-link-text;
+        padding: 20px 10px;
+        background-color: $orangeColor;
+        color: $anotherBlack;
+        &:hover {
+          background-color: $primaryColor;
+          color: $lightColor;
+        }
+      }
+    }
+  }
+}

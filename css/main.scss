@@ -1,0 +1,21 @@
+// configs
+@import "config/variables";
+@import "config/rest";
+@import "config/components";
+
+// layout
+
+@import "layout/header";
+@import "layout/footer";
+/* start main page  */
+@import "pages/home";
+@import "pages/our-heritage";
+@import "pages/our-shop";
+@import "pages/our-farm";
+@import "pages/blog";
+@import "pages/contact-us";
+@import "pages/orders";
+@import "pages/read-more";
+
+/* respansive  */
+@import "respansives/respansive";

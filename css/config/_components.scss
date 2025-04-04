@@ -1,0 +1,54 @@
+%all-link-text {
+  text-decoration: none;
+  transition: 0.5s;
+}
+%btn {
+  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elevatore {
+  padding: 10px 20px;
+  border-radius: 5px 5px 0px 0px;
+  color: $lightColor;
+  background-color: rgb(48, 48, 48);
+  position: fixed;
+  bottom: 0%;
+  right: 100px;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+// paddings
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+// margins
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}

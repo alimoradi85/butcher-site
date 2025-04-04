@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/1a03df0e89.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="../image/country-butcher-fav.webp" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body>
+    <!-- header of page -->
+    <header id="header">
+      <!-- Top Header -->
+      <div class="container">
+        <div class="top-header">
+          <!-- socials -->
+          <div class="socials left-to-right">
+            <h4>FOLLW US:</h4>
+            <div class="icons">
+              <a href=""><i class="fa fa-facebook facebook"></i></a>
+              <a href=""><i class="fa fa-twitter twitter"></i></a>
+              <a href=""><i class="fa fa-instagram instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="logo-site top-to-bottom">
+            <a href="home.html">
+              <img src="../image/countrybutcher-logo@1x.webp" alt="" />
+            </a>
+          </div>
+
+          <div class="my-account right-to-left">
+            <div class="account-icon">
+              <i class="fa fa-user-circle-o dark-color"></i>
+              <a href="#" class="title">
+                <h4>My Account</h4>
+              </a>
+            </div>
+
+            <div class="bsket-icon">
+              <a href="#" class="titles">
+                <i class="fa fa-shopping-cart dark-color"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom header || nav menu -->
+      <nav class="nav-header">
+        <div class="bottom-header">
+          <input type="checkbox" id="check" />
+          <ul class="menu bottom-to-top">
+            <li><a href="home.html">HOME</a></li>
+            <li>
+              <a href="our-heritage.html">OUR HERITAGE</a>
+            </li>
+            <li><a href="our-shop.html" class="current">OUR SHOP</a></li>
+            <li><a href="our-farm.html">OUR FARM</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact-us.html">CONTACT US</a></li>
+          </ul>
+          <label for="check" class="bars-menu"
+            ><i class="fa fa-bars bars-icon"></i>
+            <i class="fa fa-close close-icon"></i>
+          </label>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main id="main">
+      <div class="services services-in-shop">
+        <a href="#" class="left-to-right">
+          <span>
+            <i class="fa fa-truck truck"></i>
+            REFRIGEATED TRUCK DELIVERY
+          </span>
+        </a>
+        <a href="#" class="left-to-right">
+          <span>
+            <i class="fa fa-shopping-bag"></i>
+            FREE SHOPPING ON ORDERS OVER $200
+          </span>
+        </a>
+        <a href="#" class="left-to-right">
+          <span>
+            <i class="fa fa-shopping-bag"></i>
+            AWARD WINNING PREMIIUM MEATS
+          </span>
+        </a>
+      </div>
+
+      <section class="products">
+        <div class="container">
+          <div class="inner-products">
+            <div class="about-products">
+              <h6 class="title">EXPERTLY FARMED & PREPARED</h6>
+              <h1 class="big-title">The Finest Meat & Poultry</h1>
+              <p class="title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque vestibulum aliquam cursus. Mauris molestie aliquam
+                urna. Curabitur nec eleifend risus. Integer eget libero sed elit
+                pharetra ultricies eu in augue.
+              </p>
+            </div>
+            <div class="cols-products">
+              <figure
+                class="item-products out-of-stock item-selected"
+                id="beef"
+              >
+                <div class="image-products">
+                  <a>
+                    <img
+                      src="../image/beef-tenderloin.jpg"
+                      alt=""
+                      class="img-beef"
+                      onclick="sendData()"
+                    />
+                  </a>
+                </div>
+                <a>
+                  <h1
+                    class="name-of-product"
+                    data-pname="beef"
+                    onclick="sendData()"
+                  >
+                    Beef Tenderloin
+                  </h1>
+                </a>
+                <p class="price-of-product1" data-pprice="beef">
+                  <span class="border">$36.99</span> $32.99
+                </p>
+              </figure>
+
+              <figure class="item-products item-selected">
+                <div class="image-products">
+                  <a onclick="sendData()">
+                    <img src="../image/seasoned-chicken.jpg" alt="" />
+                  </a>
+                </div>
+                <a>
+                  <h1 class="name-of-product" onclick="sendData()">
+                    Chicken Fillet
+                  </h1>
+                </a>
+                <p class="price-of-product">$8.99 – $38.99</p>
+              </figure>
+
+              <figure class="item-products item-selected">
+                <div class="image-products">
+                  <a onclick="sendData()">
+                    <img src="../image/ground-beef-297x300.jpg" alt="" />
+                  </a>
+                </div>
+                <a>
+                  <h1 class="name-of-product" onclick="sendData()">
+                    Ground Beef Chuck
+                  </h1>
+                </a>
+                <p class="price-of-product">$4.99 – $14.99</p>
+              </figure>
+
+              <figure class="item-products item-selected">
+                <div class="image-products">
+                  <a onclick="sendData()">
+                    <img src="../image/t-bone-steak-297x300.jpg" alt="" />
+                  </a>
+                </div>
+                <a>
+                  <h1 class="name-of-product" onclick="sendData()">
+                    Porterhouse Steak
+                  </h1>
+                </a>
+                <p class="price-of-product">$18.99 – $34.99</p>
+              </figure>
+
+              <figure class="item-products item-selected">
+                <div class="image-products">
+                  <a onclick="sendData()">
+                    <img src="../image/sirloin-steaks.jpg" alt="" />
+                  </a>
+                </div>
+                <a>
+                  <h1 class="name-of-product" onclick="sendData()">
+                    Sirloin Steaks
+                  </h1>
+                </a>
+                <p class="price-of-product">$9.99 – $16.99</p>
+              </figure>
+
+              <figure class="item-products item-selected">
+                <div class="image-products">
+                  <a onclick="sendData()">
+                    <img src="../image/streaky-bacon-297x300.jpg" alt="" />
+                  </a>
+                </div>
+                <a>
+                  <h1 class="name-of-product" onclick="sendData()">
+                    Streaky Bacon
+                  </h1>
+                </a>
+                <p class="price-of-product">$3.50 – $12.00</p>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article class="offers">
+        <div class="about-offers left-to-right">
+          <p class="title">Fresh Offers In Your Inbox</p>
+          <h1 class="big-title">Weekly Newsletter</h1>
+          <p class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente,
+            repellendus. Quisquam error et temporibus odit animi culpa
+            repellendus similique molestiae quas placeat suscipit asperiores sed
+            perferendis ea laboriosam, rerum unde!
+          </p>
+          <form action="" class="form-email" data-form="form-offers">
+            <input type="email" placeholder="Enter your email addrsee" />
+            <button class="button-subscribe" id="form-offers">SUBSCRIBE</button>
+          </form>
+        </div>
+      </article>
+    </main>
+
+    <!-- <-- FOOTER -->
+    <footer id="footer">
+      <div class="container">
+        <div class="inner-footer">
+          <div class="logos top-to-bottom">
+            <a href="home.html">
+              <img src="../image/countrybutcher-logo@1x.webp" alt="logo site" />
+            </a>
+            <img src="../image/quality-badges.jpg" alt="quality" />
+            <div class="icons">
+              <a href=""><i class="fa fa-facebook facebook"></i></a>
+              <a href=""><i class="fa fa-twitter twitter"></i></a>
+              <a href=""><i class="fa fa-instagram instagram"></i></a>
+            </div>
+          </div>
+          <div class="our-page right-to-left">
+            <a href="our-heritage.html" class="title">OUR HERITAGE</a>
+            <a href="our-shop.html" class="title">OUR SHOP</a>
+            <a href="our-farm.html" class="title">OUR FARM</a>
+            <a href="blog.html" class="title">BLOG</a>
+            <a href="contact-us.html" class="title">CONTACT US</a>
+          </div>
+          <div class="more-parts right-to-left">
+            <a href="#" class="title">PRIVACY POLICY</a>
+            <a href="#" class="title">MY ACCOUNT</a>
+            <a href="#" class="title">BUY AVADA NOW</a>
+          </div>
+          <div class="visa-image right-to-left">
+            <a href="#"
+              ><img src="../image/footer-card-logos.jpg" alt="footer" />
+            </a>
+          </div>
+
+          <div class="description-footer right-to-left">
+            <p class="title">
+              &copy; 2012 - 2025 .
+              <a href="https://avada.com/feature/woocommerce/">AVADA</a> is a
+              <a href="https://avada.com/feature/woocommerce/"
+                >WEBSITE BUILDER</a
+              >
+              for <a href="https://wordpress.org/">WORDPREES</a> and
+              <a href="#">eCOMMERCE</a> . developed by
+              <a href="https://avada.com/feature/woocommerce/">Theme fusion</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="elevatore">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/our-shop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+@media (max-width: 644px) {
+  .top-header {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column-reverse;
+    z-index: 2;
+
+    & > .socials {
+      display: none;
+    }
+
+    & > .logo-site {
+      width: 100%;
+      margin: 20px 0px;
+
+      & > a > img {
+        transform: scale(1.4);
+      }
+    }
+
+    & > .my-account {
+      width: 100%;
+      justify-content: space-between;
+      position: relative;
+      top: -20px;
+    }
+  }
+
+  /* bottom  header */
+
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .nav-header {
+    & > .bottom-header {
+      & > ul {
+        display: none;
+        animation: opacity 0.4s ease-in;
+
+        & > li {
+          width: 100%;
+          border-bottom: 1px solid #3333336c;
+          padding: 0px 0px;
+          & > a {
+            width: 100%;
+            padding: 20px;
+            color: $darkColor;
+            font-weight: normal;
+            &:hover {
+              background-color: $primaryColor;
+              color: $lightColor;
+            }
+          }
+          & > .current {
+            background-color: $primaryColor;
+          }
+        }
+      }
+
+      input[type="checkbox"] {
+        &:checked ~ ul {
+          display: flex;
+          min-height: 300px;
+          overflow-y: auto;
+          top: 100%;
+          position: relative;
+          justify-content: start;
+          flex-direction: column;
+          background-color: $lightColor;
+        }
+      }
+
+      & > .bars-menu {
+        display: block;
+
+        & > .close-icon {
+          position: relative;
+          right: 100%;
+          transform: translate(100%, -100%);
+          opacity: 1;
+          font-size: 0px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  /*  main  section */
+
+  .section-background {
+    & > .container > .about-section {
+      height: 400px;
+    }
+  }
+
+  #main > .services {
+    flex-wrap: wrap;
+    transform: translateY(-15%);
+    gap: 30px;
+
+    & > a {
+      width: 100%;
+    }
+  }
+
+  .traditional {
+    width: 100%;
+
+    & > .container > .inner-traditional {
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+
+      text-align: center;
+    }
+  }
+
+  .popular-product {
+    & > .container > .cols {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  #footer {
+    & > .container > .inner-footer {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+
+      & > .our-page,
+      & > .more-parts {
+        display: none;
+      }
+
+      & > .description-footer {
+        grid-column: span 1;
+        text-align: center;
+      }
+    }
+  }
+  .generations {
+    & > .container > .inner-generations > .images-generations {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .family-business {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    & > .container {
+      grid-template-columns: repeat(1, 1fr);
+      & > .inner-family-business {
+        & > h1 {
+          font-size: 3rem;
+          text-align: center;
+        }
+        & > p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .products {
+    & > .container > .inner-products > .cols-products {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .elevatore {
+    display: none;
+  }
+
+  .recent-article {
+    & > .container > .inner-recent-article {
+      & > .section-blog {
+        padding: 20px 0px;
+      }
+      & > .products-blog {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  .contact-us {
+    & > .container > .inner-contact-us {
+      grid-template-columns: repeat(1, 1fr);
+
+      & > .info > .read-more > .inner-read-more > .more-image {
+        width: 50%;
+      }
+    }
+  }
+
+  .add-to-cart {
+    width: 100%;
+    & > .container > .inner-add-to-cart {
+      grid-template-columns: repeat(1, 1fr);
+
+      .about-product {
+        & > h3,
+        h4 {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .our-award > .container > .inner-our-award {
+    & > .produce,
+    .from-table {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .animals {
+    width: 100%;
+    & > .container > .inner-animals {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

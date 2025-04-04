@@ -1,0 +1,281 @@
+.section-background {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.582)),
+    url(..image/home-hero-background-new-scaled.jpg) center center no-repeat;
+  background-size: cover;
+  & > .container > .about-section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > .inner-section-background {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      & > h5 {
+        font-size: 1.2rem;
+        color: $lightColor;
+      }
+
+      & > h1 {
+        font-size: 4rem;
+        color: $lightColor;
+        margin: 30px 0px;
+        font-family: serif;
+      }
+      & > a {
+        @extend %all-link-text;
+        @extend %btn;
+        background-color: $lightColor;
+        color: $darkColor;
+        font-weight: bold;
+        transition: 0.3s;
+        font-size: 1.1rem;
+        &:hover {
+          background-color: $orangeColor;
+        }
+      }
+    }
+  }
+}
+
+#main > .services {
+  padding: 0px 20px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 20px;
+  & > a {
+    background-color: $lightColor;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    @extend %btn;
+    @extend %all-link-text;
+    text-align: center;
+    padding: 20px 0px;
+    color: $darkColor;
+    & > span > i {
+      margin: 0px 10px;
+    }
+    & > .truck {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+.title {
+  color: $darkColor;
+  font-size: 1.1rem;
+}
+.big-title {
+  color: $darkColor;
+  font-family: serif;
+  margin: 30px 0px;
+  font-size: 3rem;
+}
+.description {
+  line-height: 30px;
+  color: $titleColor;
+  margin-bottom: 30px;
+}
+.flash-link {
+  @extend %all-link-text;
+  font-weight: bold;
+  color: $primaryColor;
+  &:hover {
+    color: $darkColor;
+  }
+  & > i {
+    margin: 10px;
+  }
+}
+
+.traditional {
+  width: 100%;
+  & > .container > .inner-traditional {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 40px;
+
+    & > img {
+      width: 100%;
+      height: 350px;
+    }
+  }
+}
+
+#main > .background {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.062);
+}
+/* order online */
+.order-online {
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.062);
+  & > .container > .cart {
+    width: 100%;
+    background-color: white;
+    border: 10px solid $orangeColor;
+    padding: 40px;
+    text-align: center;
+    line-height: 30px;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.103);
+    & > h1 {
+      padding: 20px;
+      line-height: 50px;
+    }
+  }
+}
+
+.popular-product {
+  width: 100%;
+  padding: 80px 0px;
+  background: url(..image/featured-products-background-scaled.jpg) center center
+    no-repeat;
+  background-size: cover;
+  & > .container > .about-products {
+    text-align: center;
+    padding: 30px;
+  }
+
+  & > .container > .cols {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+    & > .item-col {
+      border: 10px solid $orangeColor;
+      padding: 10px 10px;
+      padding-bottom: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      & > .image {
+        position: relative;
+        cursor: pointer;
+        & > a {
+          & > img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        & > .on-sale {
+          width: 100%;
+          height: 30px;
+          background-color: $orangeColor;
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          text-align: center;
+          line-height: 30px;
+          font-weight: bold;
+          color: $darkColor;
+        }
+      }
+      & > a {
+        @extend %all-link-text;
+
+        & > h1 {
+          font-size: 2rem;
+          transition: 0.5s;
+          cursor: pointer;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+      & > p {
+        & > .border {
+          position: relative;
+          margin: 0px 5px;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0%;
+            top: 50%;
+            background-color: $darkColor;
+          }
+        }
+        & > .off {
+          position: relative;
+          padding: 0px 5px;
+          margin-right: 10px;
+          border: 1px solid $primaryColor;
+        }
+      }
+    }
+  }
+  & > .container > .shop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    & > a {
+      text-align: center;
+      @extend %btn;
+      @extend %all-link-text;
+      margin: 20px 0px;
+      background-color: $orangeColor;
+      color: $darkColor;
+      font-weight: bold;
+      &:hover {
+        background-color: $primaryColor;
+        color: $lightColor;
+      }
+    }
+  }
+}
+
+.offers {
+  background: url(..image/newsletter-background-image-scaled.jpg) center center
+    no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > .about-offers {
+    width: 500px;
+    padding: 10px 0px;
+    text-align: center;
+    & > p {
+      color: $lightColor;
+    }
+    & > h1 {
+      color: $lightColor;
+    }
+
+    & > form {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 20px;
+
+      & > input {
+        height: 50px;
+        padding: 10px;
+      }
+      & > button {
+        background-color: $orangeColor;
+        cursor: pointer;
+      }
+    }
+  }
+}
