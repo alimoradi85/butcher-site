@@ -312,6 +312,7 @@ body {
   color: #f8f8f8;
   font-weight: bold;
   padding: 20px 0px;
+  transition: 0.5s;
 }
 .nav-header .bottom-header > ul > li > a:hover {
   color: #e1cda0;
