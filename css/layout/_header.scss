@@ -129,6 +129,7 @@
           color: $lightColor;
           @extend %all-link-text;
           font-weight: bold;
+          transition: 0.5s;
           padding: 20px 0px;
 
           &:hover {
