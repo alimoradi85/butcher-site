@@ -1,35 +1,29 @@
 // when bars and close icon are hover on nav header
-const barsIcon = document.querySelector(
-  ".nav-header .bottom-header .bars-menu .bars-icon"
-);
 
-const closeIcon = document.querySelector(
-  ".nav-header .bottom-header .bars-menu .close-icon"
-);
+const labelToggle = document.getElementById("label-toggle");
+const list = document.querySelector(".nav-header ul");
+const navHeader = document.querySelector("#header .nav-header");
 
-barsIcon.addEventListener("click", function () {
-  barsIcon.classList.add("rotate");
-  barsIcon.style.opacity = `0`;
-  closeIcon.style.opacity = `1`;
-  closeIcon.style.fontSize = `30px`;
+function toggler() {
+  this.classList.toggle("toggle");
+}
+labelToggle.addEventListener("click", function () {
+  toggler.call(this);
+  list.classList.toggle("toggle");
+  list.classList.toggle("active");
 });
 
-closeIcon.addEventListener("click", function () {
-  barsIcon.classList.remove("rotate");
-  barsIcon.style.opacity = `1`;
-  closeIcon.style.opacity = `0`;
-  closeIcon.style.fontSize = `0px`;
-});
+
+
 
 // set position fixed to nav header when window scrolled
-const navHeader = document.querySelector("#header .nav-header");
 const navOffsetTop = navHeader.offsetTop;
 const elevatore = document.querySelector(".elevatore");
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll", function () {
   const scrollTop = this.scrollY;
 
-  if (scrollTop >= navOffsetTop) {
+  if (scrollTop > navOffsetTop) {
     navHeader.classList.add("position-fixed");
   } else {
     navHeader.classList.remove("position-fixed");

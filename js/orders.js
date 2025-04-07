@@ -68,7 +68,7 @@ filtersDescription.filter((filter) => {
 const stars = Array.from(document.querySelectorAll(".points"));
 stars.forEach((star) => {
   star.addEventListener("click", function () {
-    star.style.backgroundColor = `rgba(128, 128, 128, 0.3)`;
+    this.classList.toggle("toggle-star");
   });
 });
 

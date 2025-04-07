@@ -102,64 +102,96 @@
 }
 .nav-header {
   width: 100%;
-  background-color: $primaryColor;
+  background-color: #a8343c;
   position: relative;
   z-index: 2;
+  width: 100%;
+  height: 60px;
+  position: relative;
 
-  .bottom-header {
-    width: 100%;
-    height: 60px;
-    & > ul {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      list-style: none;
-
-      & > li {
-        position: relative;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        & > .current {
-          color: $orangeColor;
-        }
-        & > a {
-          color: $lightColor;
-          @extend %all-link-text;
-          font-weight: bold;
-          transition: 0.5s;
-          padding: 20px 0px;
-
-          &:hover {
-            color: $orangeColor;
-          }
-        }
-      }
-    }
-
-    input[type="checkbox"] {
-      display: none;
-    }
-
-    & > .bars-menu {
-      display: none;
-      font-size: $iconSize;
-      position: absolute;
-      left: 90%;
-      top: 25%;
-      color: $lightColor;
-      cursor: pointer;
-      & > .bars-icon {
-        transition: 0.5s;
-      }
-      & > .close-icon {
-        transition: 0.5s;
-      }
-    }
-  }
+  width: 100%;
+  height: 60px;
+  background-color: #a8343c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+
+.nav-header > ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 30px;
+}
+.nav-header > ul > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+.nav-header > ul > li > .current {
+  color: #e1cda0;
+}
+.nav-header > ul > li > a {
+  color: #f8f8f8;
+  font-weight: bold;
+  padding: 20px 0px;
+  transition: 0.5s;
+}
+.nav-header > ul > li > a:hover {
+  color: #e1cda0;
+}
+.nav-header input[type="checkbox"] {
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+#label-toggle {
+  user-select: none;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  transition: all 0.7s ease;
+  position: relative;
+  display: block;
+}
+#label-toggle.toggle .line1 {
+  top: 14px;
+  left: 0;
+  transform: rotate(-720deg) scaleX(0);
+}
+#label-toggle.toggle .line2 {
+  transform: rotate(-765deg);
+  height: 6px;
+}
+#label-toggle.toggle .line3 {
+  top: -14px;
+  left: 0;
+  height: 6px;
+  transform: rotate(-855deg);
+}
+
+.position-fixed {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
 .position-fixed {
   position: fixed;
   top: 0%;
