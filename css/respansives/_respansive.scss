@@ -39,59 +39,42 @@
       opacity: 1;
     }
   }
-  .nav-header {
-    & > .bottom-header {
-      & > ul {
-        display: none;
-        animation: opacity 0.4s ease-in;
-
-        & > li {
-          width: 100%;
-          border-bottom: 1px solid #3333336c;
-          padding: 0px 0px;
-          & > a {
-            width: 100%;
-            padding: 20px;
-            color: $darkColor;
-            font-weight: normal;
-            &:hover {
-              background-color: $primaryColor;
-              color: $lightColor;
-            }
-          }
-          & > .current {
-            background-color: $primaryColor;
-          }
-        }
-      }
-
-      input[type="checkbox"] {
-        &:checked ~ ul {
-          display: flex;
-          min-height: 300px;
-          overflow-y: auto;
-          top: 100%;
-          position: relative;
-          justify-content: start;
-          flex-direction: column;
-          background-color: $lightColor;
-          gap: 0px;
-        }
-      }
-
-      & > .bars-menu {
-        display: block;
-
-        & > .close-icon {
-          position: relative;
-          right: 100%;
-          transform: translate(100%, -100%);
-          opacity: 1;
-          font-size: 0px;
-          display: block;
-        }
-      }
-    }
+  .nav-header > ul {
+    width: 100%;
+    display: none;
+    background-color: white;
+    top: 100%;
+    flex-direction: column;
+    gap: 0px;
+    min-height: 300px;
+    overflow-y: auto;
+    justify-content: start;
+  }
+  .nav-header > ul.active {
+    display: flex;
+    transition: 0.7s ease;
+    animation: opacity 1s alternate;
+  }
+  .nav-header > ul > li {
+    width: 100%;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.4235294118);
+    padding: 0px 0px;
+  }
+  .nav-header > ul > li > a {
+    width: 100%;
+    padding: 20px;
+    color: #212934;
+    font-weight: normal;
+  }
+  .nav-header > ul > li > a:hover {
+    background-color: #a8343c;
+    color: #f8f8f8;
+  }
+  .nav-header > ul > li > .current {
+    background-color: #a8343c;
+  }
+  #label-toggle {
+    display: flex;
   }
 
   /*  main  section */

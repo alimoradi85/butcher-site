@@ -2165,27 +2165,7 @@ body {
   #label-toggle {
     display: flex;
   }
-  /* .nav-header > input[type="checkbox"]:checked ~ ul {
-    display: flex;
-    min-height: 300px;
-    overflow-y: auto;
-    top: 100%;
-    position: relative;
-    justify-content: start;
-    flex-direction: column;
-    background-color: #f8f8f8;
-  } */
-  /* .nav-header > .bars-menu {
-    display: block;
-  }
-  .nav-header > .bars-menu > .close-icon {
-    position: relative;
-    right: 100%;
-    transform: translate(100%, -100%);
-    opacity: 1;
-    font-size: 0px;
-    display: block;
-  } */
+
   /*  main  section */
   .section-background > .container > .about-section {
     height: 400px;
